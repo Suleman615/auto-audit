@@ -5,6 +5,7 @@ import Achievements from './components/Achievements'
 import Commitments from './components/Commitments'
 import Contact from './components/Contact'
 import CountriesSlider from './components/CountriesSlider'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Network from './components/Network'
@@ -25,6 +26,7 @@ function App() {
     <Commitments/>
     <Network/>
     <Contact/>
+    <Footer/>
     </>
   )
 }

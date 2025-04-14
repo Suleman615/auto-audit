@@ -42,7 +42,7 @@ const Hero = () => {
 
                     <button
                         type="submit"
-                        className="p-3 text-base font-medium mt-4 text-white bg-gradient-to-r from-cyan-400 to-purple-500 rounded-xl hover:from-cyan-500 hover:to-purple-600 transition-all"
+                        className="p-3 text-base font-medium mt-4 cursor-pointer text-white bg-gradient-to-r from-cyan-400 to-purple-500 rounded-xl hover:from-cyan-500 hover:to-purple-600 transition-all"
                     >
                         VIN Check
                     </button>

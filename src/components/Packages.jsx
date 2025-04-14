@@ -88,7 +88,7 @@ const Packages = () => {
 
             {/* Packages */}
             <div className='flex flex-wrap justify-center gap-5'>
-            {packages.map((item, key)=> <PackageCard key={key} name={item.name} desc={item.desc} popular={item.pupular} features={item.features} />)}
+            {packages.map((item, key)=> <PackageCard key={key} name={item.name} desc={item.desc} popular={item.pupular} rate={item.rate} features={item.features} />)}
 
             </div>
 

@@ -4,9 +4,9 @@ import React, { useState } from 'react'
 const PackageCard = ({ name, desc, features, rate, popular }) => {
     return (
         
-            <div className={`border w-[26rem] p-8 pb-0 rounded-xl relative border-gray-500 hover:border-cyan-400 h-[700px] ${popular ? "bg-gradient-to-b from-cyan-400/10 to-purple-400/10 border-cyan-400" : "bg-gray-400/10"}`}>
+            <div className={`border w-[26rem] p-8  rounded-xl relative border-gray-500 hover:border-cyan-400 h-auto ${popular ? "bg-gradient-to-b from-cyan-400/10 to-purple-400/10 border-cyan-400" : "bg-gray-400/10"}`}>
                 {popular &&
-                    <p className='bg-gradient-to-r from-cyan-500 to-purple-500 text-sm font-normal -mt-10 rounded-full mx-auto  w-fit px-2'>
+                    <p className='bg-gradient-to-r from-cyan-500 to-purple-500 text-sm font-semibold -mt-11 rounded-full mx-auto py-0.5  w-fit px-3 '>
                         Most Popular
                     </p>}
                 <p className='text-2xl font-semibold mt-4 text-white'>{name}</p>
@@ -15,7 +15,7 @@ const PackageCard = ({ name, desc, features, rate, popular }) => {
                 {features.map((item, key) =>
                     <section key={key} className='flex gap-2 items-start'>
                         <Check className='text-cyan-500' />
-                        <p className='text-white'>{item}</p>
+                        <p className='text-white py-2'>{item}</p>
                     </section>
                 )}
 

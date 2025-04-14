@@ -9,8 +9,8 @@ const Navbar = () => {
 
 
 
-        <nav className=" fixed w-full z-20 top-0 backdrop-blur-3xl  border-b-[0.2px] border-b-gray-900  ">
-            <div className="max-w-screen-xl flex  items-center justify-between mx-auto px-4 py-2">
+        <nav className=" fixed w-full z-20 top-0 backdrop-blur-3xl bg-black/60  border-b-[0.2px] border-b-gray-900  ">
+            <div className="max-w-screen flex  items-center justify-between mx-auto px-3 py-3">
                 <a href="#">
                     <img
                         src={logo}
@@ -28,8 +28,8 @@ const Navbar = () => {
                         {mobile ? <X className='text-cyan-400' /> : <Menu className='text-cyan-400' />
 
                         }</span>
-                    <a href='#contact' type="button" className="text-cyan-400   hover:text-white mx-2 hover:bg-gradient-to-r from-cyan-400 to-purple-600 hidden md:inline-block  focus:outline-none cursor-pointer border border-cyan-400 hover:border-black  font-medium rounded-lg text-sm py-2 px-4 text-center">Conatct Us</a>
-                    <a href='#pkgs' type="button" className="text-white bg-gradient-to-r from-cyan-400 to-purple-600 hover:from-black hover:to-black   hover:text-cyan-400   focus:outline-none cursor-pointer border border-black hover:border-cyan-400   font-medium rounded-lg text-sm px-4 py-2 text-center">View Pricing</a>
+                    <a href='#contact' type="button" className=" text-white   hover:text-cyan-400 mx-2 hidden md:inline-block   cursor-pointer   font-normal   text-sm py-2.5 px-4 ">Conatct Us</a>
+                    <a href='#pkgs' type="button" className="text-black bg-gradient-to-r from-cyan-400 to-purple-600 hover:from-cyan-500 hover:to-purple-500   cursor-pointer     font-medium rounded-lg text-sm px-4 py-2.5 text-center">View Pricing</a>
 
 
 
