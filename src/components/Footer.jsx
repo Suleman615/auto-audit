@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
 
 
-                <div>
+                <div className='px-4'>
                     <h3 className='text-white font-bold text-lg'>Quick Links</h3>
                     <div className=" h-1 w-12 mt-2  bg-gradient-to-r from-cyan-400 to-purple-400"></div>
 
@@ -52,7 +52,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className='px-4'>
                     <h3 className='text-white font-bold text-lg'>Our Services</h3>
                     <div className=" h-1 w-12 mt-2  bg-gradient-to-r from-cyan-400 to-purple-400"></div>
 
@@ -78,7 +78,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='max-w-80 flex flex-col justify-between'>
+                <div className='max-w-80 flex flex-col justify-between px-4'>
                     <h3 className='text-white font-bold text-lg'>Get In Touch</h3>
                     <div className=" h-1 w-12 mt-2  bg-gradient-to-r from-cyan-400 to-purple-400"></div>
                     <p className='text-gray-400'>Have questions or need assistance with our vehicle history reports? We're here to help.</p>

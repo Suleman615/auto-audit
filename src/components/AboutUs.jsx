@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutImage from '/about.png'
+import { ArrowRight } from 'lucide-react';
 
 const AboutUs = () => {
     return (
@@ -12,9 +13,9 @@ const AboutUs = () => {
                 </h1>
                 <p className="mt-4 text-lg py-4 font-normal text-gray-400">
                     At VIN Cario Pro, we specialize in delivering comprehensive vehicle history reports that empower our customers to make well-informed decisions. Whether you're buying, selling, or simply curious about your vehicle's past, our services provide the clarity and transparency you need. We understand the importance of knowing a vehicle's history, which is why we gather data from reliable and trusted sources globally. This ensures that you receive the most accurate and up-to-date information available.                </p>
-                <button className=" cursor-pointer  font-semibold  text-sm text-cyan-400 rounded hover:underline">
-                    Read More
-                </button>
+                <a className=" cursor-pointer  font-semibold flex gap-2 text-sm text-cyan-400 rounded hover:underline w-fit hover:gap-4">
+                   <p>Learn More About Us</p>  <ArrowRight size={19} className="inline-block" />
+                </a>
             </div>
             <div className="md:w-1/2  ">
                 <img

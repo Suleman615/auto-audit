@@ -21,19 +21,19 @@ export const Carousel = () => {
                 const nextIndex = (currentIndex + 1) % imageKeys.length;
                 return imageKeys[nextIndex];
             });
-        }, 10000); // Change image every 10 seconds
+        }, 10000); 
 
-        return () => clearInterval(interval); // Cleanup on unmount
+        return () => clearInterval(interval); 
     }, []);
 
     return (
-        <div className="relative h-[300px] md:h-[500px] w-full overflow-hidden rounded-xl">
+        <div className="relative h-[300px] md:h-[500px] bg-gradient-to-r from-gray-900/10 to-purple-950/20  w-full overflow-hidden rounded-xl">
             {Object.entries(images).map(([key, src]) => (
                 <img
                     key={key}
                     src={src}
                     alt={`slider image ${key}`}
-                    className={`absolute w-full h-full object-cover transition-opacity duration-[5000ms]  ease-in-out rounded-xl ${
+                    className={`absolute w-[90%] md:w-[80%] left-5 md:left-20 h-[95%] top-3 object-cover transition-opacity duration-[5000ms]  ease-in-out ${
                         image === key ? 'opacity-100 z-10' : 'opacity-0 z-0'
                     }`}
                     loading="lazy"

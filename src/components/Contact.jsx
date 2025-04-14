@@ -1,3 +1,4 @@
+import { Send } from 'lucide-react'
 import React from 'react'
 
 const Contact = () => {
@@ -10,7 +11,7 @@ const Contact = () => {
             </div>
             <div className="mx-auto h-1 w-20   bg-gradient-to-r from-cyan-400 to-purple-400"></div>
             <div className='bg-gradient-to-r from-cyan-500/20   to-purple-500/20 border border-gray-400/50 mx-2 md:mx-56 mb-20 mt-12 rounded-xl h-auto py-10'>
-                <form action="#" className='mx-auto  flex flex-col  gap-2 md:w-1/2'>
+                <form action="#" className='mx-auto  flex flex-col  gap-2 md:w-1/2 px-2'>
 
                     <h4 className='text-white font-bold text-xl'>Send Us a Message</h4>
                     <label className="text-gray-400 text-md mt-3 font-normal" htmlFor="name">Your Name</label>
@@ -44,7 +45,7 @@ const Contact = () => {
                         type="submit"
                         className="p-3 text-base font-medium mt-4 cursor-pointer bg-gradient-to-r from-cyan-400 to-purple-500 rounded-xl hover:from-cyan-500 hover:to-purple-600 transition-all"
                     >
-                       Send Message
+                       Send Message <Send className='inline' size={18} />
                     </button>
 
                 </form>
